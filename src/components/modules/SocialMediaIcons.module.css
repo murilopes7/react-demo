@@ -1,0 +1,30 @@
+.socialIconsContainer {
+    display: flex;
+    min-width: 240px;
+    min-height: 56px;
+    gap: 40px 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.socialIcon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    align-self: stretch;
+}
+
+/* Instagram */
+.socialIcon:first-child {
+    aspect-ratio: 0.85;
+    width: 55px;
+}
+
+.socialIcon:nth-child(2) {
+    aspect-ratio: 0.94;
+    width: 50px;
+}
+
+.socialIcon:last-child {
+    width: 56px;
+}

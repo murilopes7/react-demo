@@ -1,0 +1,38 @@
+{
+    "slides": [
+        {
+            "src": "https://i.postimg.cc/JGwd158w/chika.jpg",
+            "alt": "Image 1"
+        },
+
+        {
+            "src": "https://i.postimg.cc/nM9Pbw6Y/chika-2.jpg",
+            "alt": "Image 2"
+        },
+
+        {
+            "src": "https://i.postimg.cc/Xpw1XBNr/hoshino.jpg",
+            "alt": "Image 3"
+        },
+
+        {
+            "src": "https://i.postimg.cc/68cHfsvw/kiss-shot.png",
+            "alt": "Image 4"
+        },
+
+        {
+            "src": "https://i.postimg.cc/QFh47NV0/tokisaki.jpg",
+            "alt": "Image 5"
+        },
+
+        {
+            "src": "https://i.postimg.cc/mrcfTfrv/senjougahara.jpg",
+            "alt": "senjougahara"
+        },
+
+        {
+            "src": "https://i.postimg.cc/T1PcBwz7/azusa.webp",
+            "alt": "azusa"
+        }
+    ]
+}

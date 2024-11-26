@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@supports (height: 100dvh) {
+    body {
+        height: 100dvh;
+    }
+}
+
+:root {
+    --light: 0;
+    --light: 0;
+    --max-width-post: 420px;
+    --bg-color: #E7E6E2;
+    --primary: hsl(calc(64 + 220 * var(--light)),
+            calc(77% - 7% * var(--light)),
+            calc(79% - 56% * var(--light)));
+    --bg: hsl(calc(284 - 220 * var(--light)),
+            calc(70% + 7% * var(--light)),
+            calc(23% + 56% * var(--light)));
+    --text-primary: hsl(calc(60 * var(--light)),
+            calc(19% * var(--light)),
+            calc(97% - 89% * var(--light)));
+    --font-size-sm: clamp(0.7rem, 0.91vw + 0.47rem, 1.2rem);
+    --font-size-base: clamp(0.88rem, 1.14vw + 0.59rem, 1.5rem);
+    --font-size-md: clamp(1.09rem, 1.42vw + 0.74rem, 1.88rem);
+    --font-size-lg: clamp(1.37rem, 1.78vw + 0.92rem, 2.34rem);
+    --font-size-xl: clamp(1.71rem, 2.22vw + 1.15rem, 2.93rem);
+    --font-size-xxl: clamp(2.14rem, 2.77vw + 1.44rem, 3.66rem);
+    --font-size-xxxl: clamp(2.67rem, 3.47vw + 1.8rem, 4.58rem);
+}
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 415px;
+    height: 400px;
+}
+
+.carousel__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* height: 38vh; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilização das imagens */
+.imgSlider {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 300ms ease-in-out;
+}
+
+/* Setas */
+.imgSliderButton {
+    all: unset;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    color: white;
+    filter: drop-shadow(0px 0px 6px #555);
+    transition: background-color 150ms ease-in-out;
+}
+
+.imgSliderButton >* {
+    background-color: #151515;
+    border-radius: 100%;
+}
+
+.arrow {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.arrow :hover {
+    cursor: pointer;
+}
+
+.arrowLeft {
+    margin-top: 11em;
+    margin-left: -10em;
+    /*     border: 2px solid #555;*/
+}
+
+.arrowRight {
+    margin-top: 11em;
+    margin-left: 9.043em;
+}
+
+.imgSliderButton:hover>*,
+.imgSliderButton:focus-visible>* {
+    animation: squish 250ms ease-in-out;
+    color: #b5d19c;
+    background-color: #1b5a07;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.4 0.6;
+    }
+}
+
+/* Indicadores */
+.imgSliderDotButton {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    transition: scale 150ms ease-in-out;
+}
+
+.imgSliderDotButton>* {
+    /* fill: white;
+    stroke: black; */
+
+    fill: black;
+    stroke: white;
+
+    stroke-width: 0.12em;
+    height: 100%;
+    width: 100%;
+}
+
+.imgSliderDotButton:hover,
+.imgSliderDotButton:focus-visible {
+    scale: 1.3;
+}
+
+.imgSliderDotButton:focus-visible {
+    outline: auto;
+}
+
+.imgSliderButton:focus-visible {
+    outline: auto;
+    border-radius: 80%;
+    outline-color: black;
+}
+
+
+/*
+.carousel .slide {
+    position: absolute;
+    max-width: 418px;
+    height: 100%;
+     opacity: 0;
+    will-change: transform, opacity;
+    -webkit-animation: carousel-animate 27s cubic-bezier(0.37, 0, 0.63, 1) infinite;
+    animation: carousel-animate 27s cubic-bezier(0.37, 0, 0.63, 1) infinite
+}
+
+.carousel .slide-hidden{
+    border: 4px solid black;
+}
+*/
+
+/* 
+.carousel .slide:nth-child(1) {
+    -webkit-animation-delay: calc(3.8571428571s * -1);
+    animation-delay: calc(3.8571428571s * -1);
+}
+
+.carousel .slide:nth-child(2) {
+    -webkit-animation-delay: calc(3.8571428571s * 0);
+    animation-delay: calc(3.8571428571s * 0);
+}
+
+.carousel .slide:nth-child(3) {
+    -webkit-animation-delay: calc(3.8571428571s * 1);
+    animation-delay: calc(3.8571428571s * 1);
+}
+
+.carousel .slide:nth-child(4) {
+    -webkit-animation-delay: calc(3.8571428571s * 2);
+    animation-delay: calc(3.8571428571s * 2);
+}
+
+.carousel .slide:nth-child(5) {
+    -webkit-animation-delay: calc(3.8571428571s * 3);
+    animation-delay: calc(3.8571428571s * 3);
+}
+
+.carousel .slide:nth-child(6) {
+    -webkit-animation-delay: calc(3.8571428571s * 4);
+    animation-delay: calc(3.8571428571s * 4);
+}
+
+.carousel .slide:last-child {
+    -webkit-animation-delay: calc(-3.8571428571s * 2);
+    animation-delay: calc(-3.8571428571s * 2);
+} 
+ */
+
+/* Animação */
+@media not (prefers-reduced-motion) {
+    .imgSlider {
+        transition: translate 300ms ease-in-out;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 568px) {
+    .carousel {
+        -webkit-padding-after: 52px;
+        padding-block-end: 52px;
+    }
+}
+
+@media (max-width: 568px) {
+    .carousel .slide {
+        margin-inline: calc(var(--container-padding-horizontal) + 1px);
+    }
+}
