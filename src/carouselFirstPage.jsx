@@ -106,9 +106,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
 
+import 'ionicons';
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, EffectCoverflow } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 import kissshot from '../public/ig_img/kiss shot.png';
 import akeno from '../public/ig_img/akeno.avif';
@@ -120,25 +122,35 @@ import tokisaki from '../public/ig_img/tokisaki.jpg';
 
 const imgs = [kissshot, akeno, rias, chika, chika2, hoshino, tokisaki];
 
+
+import frontIMGS from '/ig_img/1.png';
+import backIMGS from '/ig_img/11.png';
+const img = [frontIMGS, backIMGS];
+
 function CarouselFirstPage() {
     return (
-        <div>
+        <div className='first-page-container'>
             {/* Main Carousel */}
             <Swiper
-                modules={Navigation}
+                modules={[Pagination, Navigation]}
                 lazy='true' // Enable lazy loading
                 spaceBetween={10}
                 slidesPerView={1}
                 className="swiper-container main-carousel"
                 loop={true}
                 grabCursor={true}
-                clickable={{
-                    slideThumbs: true,
-                }}
+
+                autoplay={{ delay: 3000, disableOnInteraction: false }}
+
+                /* breakpoints={{
+                    640: { spaceBetween: 20 },
+                    768: { spaceBetween: 40 },
+                    1024: { spaceBetween: 50 },
+                }}*/
+
                 breakpoints={{
-                    640: { slidesPerView: 1, spaceBetween: 20 },
-                    768: { slidesPerView: 2, spaceBetween: 40 },
-                    1024: { slidesPerView: 3, spaceBetween: 50 },
+                    640: { pagination: { clickable: false } },
+                    1024: { pagination: { clickable: true, type: 'bullets' } },
                 }}
 
                 navigation={{
@@ -147,25 +159,25 @@ function CarouselFirstPage() {
                     clickable: true,
                 }}
 
-                // And if we need scrollbar
-                scrollbar={{
-                    el: ".swiper-scrollbar",
-                }}
-
                 pagination={{
                     el: '.swiper-pagination',
                     clickable: true,
                 }}
             >
+                <div className="container-button-whatsapp">
+                    <h1 className="title-first-page">EXPERIMENTE VIVAH</h1>
+                    <button href="https://www.google.com/search?client=opera-gx&q=how+to+style+a+button+in+css&sourceid=opera&ie=UTF-8&oe=UTF-8" className='button-text' target='_blank'>Agende sua visita</button>
+                </div>
+
                 <SwiperSlide className='swiper-slide'>
-                    <img className="swiper-lazy" datatype='string' src={imgs[0]} alt="Slide 1" />
+                    <img className="swiper-lazy" datatype='string' src={img[0]} alt="Slide 1" />
                     <div className="swiper-lazy-preloader"></div>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img className="swiper-lazy" datatype='string' src={imgs[1]} alt="Slide 2" />
+                    <img className="swiper-lazy" datatype='string' src={img[1]} alt="Slide 2" />
                     <div className="swiper-lazy-preloader"></div>
                 </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
+                {/* <SwiperSlide className='swiper-slide'>
                     <img className="swiper-lazy" datatype='string' src={imgs[2]} alt="Slide 3" />
                     <div className="swiper-lazy-preloader"></div>
                 </SwiperSlide>
@@ -184,16 +196,39 @@ function CarouselFirstPage() {
                 <SwiperSlide className='swiper-slide'>
                     <img className="swiper-lazy" datatype='string' src={imgs[6]} alt="Slide 6" />
                     <div className="swiper-lazy-preloader"></div>
-                </SwiperSlide>
-            </Swiper>
+                </SwiperSlide>*/}
 
-            {/* Navigation buttons */}
-            <div className="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
-            </div>
-            <div className="swiper-button-next slider-arrow">
-                <ion-icon name="arrow-forward-outline"></ion-icon>
-            </div>
+                <div className="slider-controler">
+                    <div className="swiper-button-prev slider-arrow">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div className="swiper-button-next slider-arrow">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                    <div className="swiper-pagination"></div>
+                </div>*
+
+                <div className="container-button-whatsapp">
+                    <h1 className="title-first-page">EXPERIMENTE VIVAH</h1>
+                    <a
+                        href="https://www.google.com/search"
+                        className="button-text"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Agende sua visita
+                    </a>
+                </div>
+
+
+                {/* Navigation buttons */}
+                {/* <div className="swiper-button-prev slider-arrow">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </div>
+                <div className="swiper-button-next slider-arrow">
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </div> */}
+            </Swiper>
         </div>
     );
 }
