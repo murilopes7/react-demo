@@ -206,7 +206,7 @@ function CarouselFirstPage() {
                         <ion-icon name="arrow-forward-outline"></ion-icon>
                     </div>
                     <div className="swiper-pagination"></div>
-                </div>*
+                </div>
 
                 <div className="container-button-whatsapp">
                     <h1 className="title-first-page">EXPERIMENTE VIVAH</h1>

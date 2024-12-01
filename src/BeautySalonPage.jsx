@@ -4,7 +4,7 @@ import styles from './BeautySalonPage.module.css';
 import NavigationMenu from './components/NavigationMenu';
 
 import Carousel from './data/CarouselData';
-import AboutMeImage from './components/about-me-image';
+import AboutMeImage from './components/about-me-page';
 
 import FirstPageCarousel from './carouselFirstPage.jsx';
 
@@ -63,6 +63,10 @@ const BeautySalonPage = () => {
 
                 <section className={styles.firstPage}>
                     <FirstPageCarousel />
+                </section>
+
+                <section className={styles.aboutMePage}>
+                    <AboutMeImage/>
                 </section>
 
                {/*  <section>
@@ -126,7 +130,7 @@ const BeautySalonPage = () => {
                         <Carousel />
                         {/*<a href="/" style={{ fontSize: '4rem' }}>Link olá</a>*/}
                     </div>
-                </section> *
+                </section> 
 
                 {/* <div className={styles.customShapeDivider}>
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
