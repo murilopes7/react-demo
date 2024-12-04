@@ -80,7 +80,7 @@ const Carousel_image = ({ data }) => {
                         translate: '-50%',
                         display: 'flex',
                         gap: '.4rem'
-                    }}
+                    }} className="sliderDotButtonMedia"
                 >
                     {data.map((_, index) =>
                         <button tabIndex="0" key={index} className={igStyle.imgSliderDotButton} onClick={() => setImgIndex(index)}>

@@ -8,7 +8,10 @@ export const imgPortfolio = {
 
 const qualities = [
     { title: "Brabissima", content: "em coach quântico" },
-    { title: "Top 10", content: "fãs do menino Neyma" }
+    { title: "Top 10", content: "fãs do menino Neyma" },
+    { title: "Top 10", content: "fãs do serisete" },
+    { title: "Top 10", content: "fãs do Mesi careca" }
+    
 ]
 
 export default function AboutMe() {
@@ -18,9 +21,15 @@ export default function AboutMe() {
                 <small className={aboutMeStyles.sobre}>Sobre mim</small>
                 <h1 className={aboutMeStyles.conhecaEu}>Fabiana Carvalho</h1>
                 <p className={aboutMeStyles.informationContent}>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum saepe, quae at
-                    ipsum commodi in, deleniti molestias eos repellendus placeat perferendis animi
-                    velit? Commodi, nisi dolore? Ad, atque beatae. Ex?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+
+                    <br />
+                    Eum saepe, quae atipsum commodi in, deleniti molestias
+                    eos repellendus placeat perferendis animi velit?
+
+                    <br />
+
+                    Commodi, nisi dolore? Ad, atque beatae. Ex?
                 </p>
             </div>
             <ul className={aboutMeStyles.qualities}>

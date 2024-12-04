@@ -222,3 +222,7 @@
         margin-inline: calc(var(--container-padding-horizontal) + 1px);
     }
 }
+
+@media (max-width: 450px){
+
+}

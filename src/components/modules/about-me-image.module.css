@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-:root {
-    --bg-color-about-me: #F8F5E9;
-}
+/* :root {
+/*  --bg-color-about-me: #F0EFEE;*/ 
+/*  --bg-color-about-me: #F8F5E9;
+ 
+} */
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
     margin-top: 11em;
     background-color: var(--bg-color-about-me);
@@ -15,18 +17,13 @@
     position: relative;
 }
 
-.contentQualityText {
-    position: relative;
-    border: 2px solid slateblue;
-    height: 100vh;
-    width:max-content;
-}
-
 .information {
     border: 1px solid seagreen;
     height: fit-content;
     display: block;
     margin-top: 10em;
+    margin-left: 300px;
+    max-width: 96vw;
 }
 
 .sobre {
@@ -46,13 +43,16 @@
 
 .qualities {
     position:absolute;
-    border: 2px solid skyblue;
+    flex-wrap: wrap;
     padding: 0;
+    width: 480px;
     bottom: 200px;
     left: 300px;
-    gap: 200px;
-    display: flex;
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(20px, 1fr);
     align-content: space-between;
+    max-width: 96vw;
 }
 
 .containerQuality {
