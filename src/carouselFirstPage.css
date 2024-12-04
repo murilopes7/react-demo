@@ -71,7 +71,7 @@
     }
 }
 
-@media (min-width: 750px){
+@media (max-width: 750px){
     .container-button-whatsapp {
         margin-top: 300px;
         margin-left: -40px;
@@ -107,6 +107,7 @@
 
 .swiper-slide img {
     display: block;
+    max-width: 100%;
     width: 100vw;
     height: 67vh;
     border-radius: 0.6rem;

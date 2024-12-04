@@ -11,7 +11,7 @@ const qualities = [
     { title: "Top 10", content: "fãs do menino Neyma" },
     { title: "Top 10", content: "fãs do serisete" },
     { title: "Top 10", content: "fãs do Mesi careca" }
-    
+
 ]
 
 export default function AboutMe() {
@@ -38,23 +38,52 @@ export default function AboutMe() {
                         key={index}
                         value={index}
                         style={{
-                            height: "60px",
-                            border: "1px solid purple",
-                            flexDirection: "column-reverse",
+                            height: "8.4em",
+                            flexDirection: "column",
                             position: "relative",
-                            alignContent: "space-evenly"
+                            alignContent: "space-evenly",
+                            boxShadow: "0 3.2px 3px rgba(0, 0, 0, 0.15)",
+                            borderRadius: "6px",
+
                         }}
 
                         className={aboutMeStyles.containerQuality}>
 
                         <hr id={"index-" + index}
                             style={{
-                                width: "12vw",
+                                width: "100%",
                                 position: "absolute",
-                                border: "2px solid #D6BBAA",
+                                border: "2px double #3e684a",
                                 top: 0
                             }} />
-                        {content.title} <br /> {content.content}
+                        <h1 style={{
+                                position: "absolute",
+                                fontFamily: "Anonymous Pro serif",
+                                fontWeight: "100",
+                                fontStyle: "normal",
+                                fontSize: "40px",
+                                color: "#000435",
+                                left: "0.6em",
+                                marginTop: "0.6em"
+                            }}
+
+                            className={aboutMeStyles.titleQuality}>
+
+                            {content.title}
+
+                        </h1>
+                        <br />
+                        <p style={{
+                            position: "absolute",
+                            marginTop: "5rem",
+                            left: "1.5em",
+                            fontWeight: "200",
+                            fontFamily: "Raleway",
+                            fontOpticalSizing: "auto"
+                        }}
+                            className={aboutMeStyles.paragraphQuality}>
+                            {content.content}
+                        </p>
                     </li>
                 ))}
             </ul>

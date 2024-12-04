@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* :root {
 /*  --bg-color-about-me: #F0EFEE;*/ 
@@ -18,7 +19,6 @@
 }
 
 .information {
-    border: 1px solid seagreen;
     height: fit-content;
     display: block;
     margin-top: 10em;
@@ -43,12 +43,11 @@
 
 .qualities {
     position:absolute;
-    flex-wrap: wrap;
     padding: 0;
-    width: 480px;
-    bottom: 200px;
-    left: 300px;
-    grid-gap: 20px;
+    width: 40em;
+    top: 30em;
+    left: 18em;
+    grid-gap: 5em;
     display: grid;
     grid-template-columns: minmax(20px, 1fr) minmax(20px, 1fr);
     align-content: space-between;
@@ -57,7 +56,26 @@
 
 .containerQuality {
     display: flex;
-    -ms-flex-align: end;
-
-    flex-wrap: wrap;
+    height: 300px;
 }
+
+/* .titleQuality {
+    position: absolute;
+    font-family: "Anonymous Pro", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 40px;
+    color: #000435;
+    left: 0.6em;
+    top: 0;
+} */
+
+/* .paragraphQuality {
+    position: absolute;
+    margin-top: 6rem;
+    left: 1.5em;
+
+    font-weight: 200;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+} */
