@@ -1,4 +1,4 @@
-import './carouselFirstPage.css';
+import './modules/carouselFirstPage.css';
 
 // Import Swiper styles
 import 'swiper/css';

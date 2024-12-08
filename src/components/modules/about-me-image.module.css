@@ -79,3 +79,16 @@
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
 } */
+
+.imageContainer {
+    margin-top: 14em;
+    margin-left: 12em;    
+}
+
+.imageAboutMe {
+    position: absolute;
+    max-width: 100%;
+    height: 60vh;
+    border-radius: 15px;
+    box-shadow: 0 6px 6px 1px rgba(0, 0, 0, 0.3);
+}

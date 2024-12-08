@@ -3,7 +3,7 @@ import React from 'react';
 import aboutMeStyles from './modules/about-me-image.module.css';
 
 export const imgPortfolio = {
-    src: '../public/ig_img/rias-gremory.jpg', alt: 'Minha foto'
+    src: '/ig_img/rias-gremory.jpg', alt: 'Minha foto'
 }
 
 const qualities = [
@@ -87,6 +87,9 @@ export default function AboutMe() {
                     </li>
                 ))}
             </ul>
+            <div className={aboutMeStyles.imageContainer}>
+                <img src={imgPortfolio.src} className={aboutMeStyles.imageAboutMe} alt={imgPortfolio.alt} />
+            </div>
         </div>
     );
 }
