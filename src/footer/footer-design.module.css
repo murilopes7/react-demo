@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montaga&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container_footer {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.informacoes_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    left: 0;
+}
+
+.siteMap {
+    position: absolute;
+    display: flex;
+    top: 2vh;
+    justify-content: center;
+    flex-direction: column;
+    left: 20vw;
+    gap: 2em;
+}
+
+.servicosFooter {
+    position: absolute;
+    display: flex;
+    top: 2vh;
+    justify-content: center;
+    flex-direction: column;
+    left: 40vw;
+    gap: 0.6em;
+}
+
+.listFooter {
+    display: block;
+
+    /* Add spacing between list items if needed */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.titleFooter {
+    font-family: "Josefin Slab", serif;
+    font-weight: 600;
+
+    color: #F8FBF8;
+}
+
+.paragraphFooter {
+    font-family: "Anonymous Pro", serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    font-style: normal;
+
+    color: #FFF9E3;
+
+    text-decoration: none;
+}
+
+.paragraphFooter:hover {
+    color:burlywood;
+}
+
+.socialMediaIconsFooter {
+    position: relative;
+    top: 5vh;
+}
+
+.socialIcons {
+    position: absolute;
+    left: 42vw;
+    display: inline-flex;
+    top: 6.2vh;
+    gap: 3em;
+}
+
+.socialIcon:hover {
+    cursor: pointer;
+    fill:burlywood;
+}
+
+.linha {
+    position: absolute;
+    width: 40%;
+}
+
+.endFooter {
+    position: relative;
+}
+
+.copyrightFooter {
+    font-family: "Josefin Slab", serif;
+    font-size: larger;
+    font-weight: 200;
+    color: #F8FBF8;
+    padding-top: 500px;
+
+    position: absolute;
+    bottom: 0;
+}
