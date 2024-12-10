@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montaga&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.testimonialSection {
+    background: linear-gradient(192deg, #f5efd9, #F8FBF8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 57px 13px;
+}
+
+.sectionTitle {
+    color: rgba(37, 44, 70, 1);
+    font: 400 5em 'Montaga', sans-serif;
+    margin-bottom: 135px;
+}
+
+.testimonialGrid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 198px;
+}
+
+.testimonialCard {
+    flex: 1;
+    font-size: 19px;
+}
+
+.testimonialContent {
+    position: relative;
+    min-height: 317px;
+    padding: 29px 41px 72px 13px;
+    overflow: hidden;
+
+}
+
+.backgroundImage {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.testimonialText {
+    position: relative;
+    color: rgba(22, 13, 8, 1);
+    font-family: 'Anonymous Pro', -apple-system, Roboto, Helvetica, sans-serif;
+    margin-left: 1em;
+    max-width: 95%;
+}
+
+.authorInfo {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin:0.7em 0 0 1em;
+    font-family: 'Josefin Slab', -apple-system, Roboto, Helvetica, sans-serif;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+}
+
+.authorImage {
+    width: 85px;
+    height: 85px;
+    border-radius: 30px;
+    object-fit: contain;
+}
+
+.imageGallery {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1176px;
+}
+
+.galleryImage {
+    width: 50%;
+    aspect-ratio: 2.92;
+    object-fit: contain;
+}
+
+@media (max-width: 991px) {
+    .testimonialSection {
+        padding: 0 20px;
+    }
+
+    .sectionTitle {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .testimonialGrid {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .testimonialContent {
+        padding-right: 20px;
+    }
+
+    .authorInfo {
+        margin-left: 10px;
+    }
+
+    .imageGallery {
+        flex-direction: column;
+    }
+
+    .galleryImage {
+        width: 100%;
+        margin-top: 40px;
+    }
+}

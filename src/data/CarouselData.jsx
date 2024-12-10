@@ -15,8 +15,8 @@ const imgs = [chika, kiss_shot, ai];
 /* Função onde é de fato colocado o post no site principal */
 function Carousel(){
     return (
-        <div className="container">
-            <article className="instagram">
+        <div className="container-of-instagram">
+            <article className="instagram-post">
                 {/* Cabeçalho do post */}
                 <header className="instagram__header">
                     <figure><img src="https://assets.codepen.io/108082/jake-dog.png" alt="Jake Dog" width="42" height="42" />
@@ -28,7 +28,7 @@ function Carousel(){
 
                 {/* Aonde está realmente as fotos */}
                 <section className="instagram__media">
-                    <div className="img"></div>
+                    <div className="img-instagram-media"></div>
                     <Carousel_image data={imgs}/>
                 </section>
 

@@ -7,6 +7,7 @@ import AboutMeImage from './components/about-me-page';
 import FirstPageCarousel from './components/carouselFirstPage.jsx';
 import Interior from './components/interior-design.jsx'
 import Exterior from './components/exterior-design.jsx'
+import Testimonials from './components/testimonial.jsx'
 
 import './beautySalonImageAnimation.js';
 
@@ -16,10 +17,10 @@ const socialIcons = [
     { src: "https://cdn.builder.io/api/v1/image/assets/TEMP/4e3def12d0cb8417defdab7c061c5b36f7bb0ddae9347915e0cb185bcb639502?placeholderIfAbsent=true&apiKey=2aff019a0b6541ef916c8852aafe766c", alt: "Social Media Icon 3" }
 ];
 
-import aboutMePopUp from '../public/ig_img/Desktop - 3.png';
-import akeno from '../public/ig_img/akeno.avif';
-import rias from '../public/ig_img/rias-gremory.jpg'
-import logoHeader from '../public/ig_img/ÍCONE VARIAÇÃO SEM FUNDO.png'
+import aboutMePopUp from '/ig_img/Desktop - 3.png';
+import akeno from '/ig_img/akeno.avif';
+import rias from '/ig_img/rias-gremory.jpg'
+import logoHeader from '/ig_img/ÍCONE VARIAÇÃO SEM FUNDO.png'
 
 const imgs = [aboutMePopUp, akeno, rias, logoHeader];
 
@@ -104,6 +105,10 @@ const BeautySalonPage = () => {
 
                 <section className={styles.exteriorPage}>
                     <Exterior />
+                </section>
+
+                <section className={styles.testimonialsCard}>
+                    <Testimonials />
                 </section>
             </section>
 
